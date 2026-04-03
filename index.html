@@ -15,9 +15,9 @@
   --green:#22c55e; --red:#ef4444; --yellow:#eab308;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Inter',system-ui,sans-serif;background:#000;overflow:hidden;width:100vw;height:100vh;}
-.deck{position:relative;width:100vw;height:100vh;}
-.slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;align-items:center;padding:6vh 8vw;text-align:center;}
+body{font-family:'Inter',system-ui,sans-serif;background:#000;overflow:hidden;width:100vw;height:100vh;margin:0;}
+.deck{position:fixed;inset:0;width:100vw;height:100vh;}
+.slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;align-items:center;padding:5vh 6vw;text-align:center;width:100%;height:100%;}
 .slide.active{display:flex;}
 .slide.dark{background:var(--navy);color:var(--white);}
 
@@ -62,26 +62,26 @@ h2{font-size:clamp(1.6rem,3.2vw,2.6rem);font-weight:800;line-height:1.15;letter-
   <div class="label orange">Revenue + Content Day &nbsp;·&nbsp; April 21, 2026</div>
   <h1 style="margin-bottom:0.6rem;">Newsletters Are the<br><span class="hl">Media Workhorse.</span></h1>
   <p class="sub" style="margin-bottom:3rem;">7 Ways to Supercharge Monetization</p>
-  <div style="display:flex;gap:3.5rem;justify-content:center;flex-wrap:wrap;">
-    <div style="display:flex;flex-direction:column;align-items:center;gap:0.7rem;">
-      <img src="images/eric.png" alt="Eric Kammerzelt" class="avatar">
+  <div style="display:flex;gap:4rem;justify-content:center;align-items:flex-start;margin-top:0.5rem;">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:0.8rem;width:160px;">
+      <img src="images/eric.png" alt="Eric Kammerzelt" style="width:88px;height:88px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.12);display:block;flex-shrink:0;">
       <div style="text-align:center;">
-        <p style="font-weight:700;font-size:0.95rem;">Eric Kammerzelt</p>
-        <p style="font-size:0.78rem;color:var(--gray-400);">CEO, Parameter1</p>
+        <p style="font-weight:700;font-size:0.95rem;line-height:1.3;">Eric Kammerzelt</p>
+        <p style="font-size:0.78rem;color:var(--gray-400);margin-top:0.2rem;line-height:1.4;">CEO, Parameter1</p>
       </div>
     </div>
-    <div style="display:flex;flex-direction:column;align-items:center;gap:0.7rem;">
-      <img src="images/nicole.png" alt="Nichole Morford" class="avatar">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:0.8rem;width:160px;">
+      <img src="images/nicole.png" alt="Nichole Morford" style="width:88px;height:88px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.12);display:block;flex-shrink:0;">
       <div style="text-align:center;">
-        <p style="font-weight:700;font-size:0.95rem;">Nichole Morford</p>
-        <p style="font-size:0.78rem;color:var(--gray-400);">SVP Content, Touchpoints Markets</p>
+        <p style="font-weight:700;font-size:0.95rem;line-height:1.3;">Nichole Morford</p>
+        <p style="font-size:0.78rem;color:var(--gray-400);margin-top:0.2rem;line-height:1.4;">SVP Content,<br>Touchpoints Markets</p>
       </div>
     </div>
-    <div style="display:flex;flex-direction:column;align-items:center;gap:0.7rem;">
-      <img src="images/rob.png" alt="Rob Lutin" class="avatar">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:0.8rem;width:160px;">
+      <img src="images/rob.png" alt="Rob Lutin" style="width:88px;height:88px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.12);display:block;flex-shrink:0;">
       <div style="text-align:center;">
-        <p style="font-weight:700;font-size:0.95rem;">Rob Lutin</p>
-        <p style="font-size:0.78rem;color:var(--gray-400);">SVP Revenue Strategy, Morning Brew</p>
+        <p style="font-weight:700;font-size:0.95rem;line-height:1.3;">Rob Lutin</p>
+        <p style="font-size:0.78rem;color:var(--gray-400);margin-top:0.2rem;line-height:1.4;">SVP Revenue Strategy,<br>Morning Brew</p>
       </div>
     </div>
   </div>
